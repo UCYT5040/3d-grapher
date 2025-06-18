@@ -1,0 +1,27 @@
+{
+  "name": "3d-grapher",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UCYT5040/3d-grapher.git"
+  },
+  "author": "Jeremiah Saunders",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UCYT5040/3d-grapher/issues"
+  },
+  "homepage": "https://github.com/UCYT5040/3d-grapher#readme",
+  "description": "A simple 3d grapher.",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  },
+  "dependencies": {
+    "aframe": "^1.7.1"
+  }
+}
