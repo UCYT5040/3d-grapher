@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang=en><meta charset=UTF-8><title>3d Grapher</title><body>
+<div style=z-index:1000;color:#fff;position:fixed;top:1px;left:1px>
+    <span>Equation:</span>
+    <input type=number id=x-coeff value=1>
+    <label for=x-coeff>* x</label>
+
+    <select id=operator>
+        <option value=+>+</option>
+        <option value=- selected>-</option>
+        <option value=*>*</option>
+        <option value=/>/</option>
+    </select>
+
+    <input type=number id=y-coeff value=1>
+    <label for=y-coeff>* y</label>
+
+    <span>=</span>
+
+    <input type=number id=z-coeff value=1>
+    <label for=z-coeff>* z</label>
+
+    <button id=graph-button>Graph</button>
+</div>
+
+<a-scene background="color: black">
+    <a-entity camera position="0 5 15" look-controls wasd-controls="fly: true"></a-entity>
+    <a-light type=ambient color=#888></a-light>
+    <a-light type=point intensity=0.7 position="2 10 10"></a-light>
+    <a-grid width=20 height=20></a-grid>
+    <a-entity id=graph-container></a-entity>
+</a-scene>
+<script src=/infini-world.241d56ce.js type=module></script>
+
